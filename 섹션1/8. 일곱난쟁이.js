@@ -1,4 +1,8 @@
 function solution(arr) {
+  let answer = [];
+  for (i of arr) {
+    if (i < 100 && answer.length < 7) answer.push(i);
+  }
   return answer;
 }
 
