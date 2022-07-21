@@ -1,5 +1,15 @@
 function solution(s) {
-  return answer;
+  let answer = [];
+
+  for (i of s) {
+    if (i !== i.toUpperCase()) {
+      answer.push(i.toUpperCase());
+    } else {
+      answer.push(i);
+    }
+  }
+
+  return answer.join("");
 }
 
 let str = "ItisTimeToStudy";
